@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<>
 			<Head>
-				<title>LETSPINIT App</title>
+				<title>LetsPinIt app</title>
 			</Head>
 			<Component {...pageProps} />
 		</>

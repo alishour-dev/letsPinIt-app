@@ -70,3 +70,13 @@ header {
 		}
 	}
 }
+
+@media only screen and (min-width: $breakpoint-tablet) {
+	header {
+		padding: 1rem 2.4rem;
+
+		.svg-logo {
+			height: 8.2rem;
+		}
+	}
+}

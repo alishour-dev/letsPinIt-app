@@ -28,8 +28,8 @@
 		z-index: 11;
 		width: 90%;
 		height: 80%;
-		max-width: 85rem;
-		max-height: 85rem;
+		max-width: 70rem;
+		max-height: 70rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -121,7 +121,7 @@
 		.color-row {
 			width: 80%;
 			display: flex;
-			justify-content: space-between;
+			justify-content: space-evenly;
 			align-items: center;
 			gap: 0.8rem;
 
@@ -129,6 +129,12 @@
 				font-size: 1.6rem;
 				width: 16rem;
 				color: var(--border-bg);
+				text-align: center;
+
+				.icon {
+					position: relative;
+					bottom: -3px;
+				}
 			}
 
 			.picker-wrapper {
@@ -193,6 +199,35 @@
 		}
 		100% {
 			opacity: 0;
+		}
+	}
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+	.modal-backdrop {
+		form {
+			width: 90%;
+			height: 85%;
+			padding: 5rem 0 4rem 0;
+
+			.inputs {
+				.textarea-container {
+					.txt-top {
+						p {
+							margin-left: 0.4rem;
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+
+			.color-row {
+				gap: 0;
+				h1 {
+					font-size: 2rem;
+					width: 70%;
+				}
+			}
 		}
 	}
 }

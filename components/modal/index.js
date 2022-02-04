@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react"
 import { createPortal } from "react-dom"
+import { generateId } from "@utils/generateId"
 import TextArea from "./TextArea"
 import { IoClose } from "react-icons/io5"
 import { BsCheck2Circle } from "react-icons/bs"
+import { BsEyedropper } from "react-icons/bs"
 
 const Modal = ({
 	titleRef,
@@ -17,7 +19,6 @@ const Modal = ({
 }) => {
 	const [appMounted, setAppMounted] = useState(false)
 	const modalRef = useRef()
-	const generateId = Math.floor(Math.random() * 100) + Math.floor(Math.random() * 100)
 
 	useEffect(() => {
 		setAppMounted(true)
@@ -45,11 +46,11 @@ const Modal = ({
 			title: titleRef.current.value,
 			content: contentRef.current.value,
 			color: colorRef.current.value,
-			id: editClicked ? Number(idRef.current.value) : generateId,
+			id: editClicked ? String(idRef.current.value) : generateId(),
 		}
 
 		if (editClicked) {
-			const oldExcept = notes.filter((item) => item.id !== Number(idRef.current.value))
+			const oldExcept = notes.filter((item) => item.id !== String(idRef.current.value))
 			setNotes([...oldExcept, finalNote])
 			localStorage.setItem("notes", JSON.stringify([...oldExcept, finalNote]))
 		} else {
@@ -73,7 +74,7 @@ const Modal = ({
 		? createPortal(
 				<div className='modal-backdrop' onClick={handleClose} ref={modalRef}>
 					<form onSubmit={submitHandler}>
-						<button className='close-btn' onClick={handleCancel}>
+						<button className='close-btn' onClick={handleCancel} type='button'>
 							<IoClose className='icon' />
 						</button>
 						<div className='inputs'>
@@ -88,7 +89,9 @@ const Modal = ({
 							<TextArea contentRef={contentRef} />
 						</div>
 						<div className='color-row'>
-							<h1>{colorTxt}</h1>
+							<h1>
+								<BsEyedropper className='icon' /> {colorTxt}
+							</h1>
 							<div className='picker-wrapper'>
 								<input type='color' ref={colorRef} defaultValue='#f57a7a' />
 							</div>

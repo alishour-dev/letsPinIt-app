@@ -42,13 +42,6 @@ body {
 	&::-webkit-scrollbar {
 		width: 0;
 	}
-	&::-webkit-scrollbar-track {
-		background: transparent;
-	}
-	&::-webkit-scrollbar-thumb {
-		// background: var(--bg);
-		border-radius: 16px;
-	}
 }
 
 div,
@@ -104,5 +97,20 @@ button {
 	&:active {
 		box-shadow: $item-shadow-hover;
 		transform: translateY(-2px);
+	}
+}
+
+@media only screen and (min-width: 1080px) {
+	body {
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 24px;
+			background: var(--border-bg);
+		}
 	}
 }

@@ -1,6 +1,7 @@
 import Pin from "@components/assets/Pin"
-import { BsTrash, BsEyedropper } from "react-icons/bs"
+import { BsTrash } from "react-icons/bs"
 import { BiEdit } from "react-icons/bi"
+import { BsPinAngle } from "react-icons/bs"
 
 import { createRef, useEffect, useMemo } from "react"
 
@@ -54,7 +55,9 @@ export default function Notes({
 	if (notes.length === 0)
 		return (
 			<div className='empty-container'>
-				<h1>No items available</h1>
+				<BsPinAngle className='icon' />
+				<h1>No pinned notes atm!</h1>
+				<p>Pin a custom-styled note by clicking on the bottom right corner!</p>
 			</div>
 		)
 

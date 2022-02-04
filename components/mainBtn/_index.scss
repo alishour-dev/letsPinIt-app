@@ -7,7 +7,7 @@
 	box-shadow: $item-shadow;
 	transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
 	border-radius: 8px 0 0 8px;
-	transform: translateX(94px);
+	transform: translateX(96px);
 	height: 10rem;
 	border: 1px solid var(--border-bg);
 	display: flex;
@@ -28,8 +28,8 @@
 	.add-pin-btn {
 		cursor: pointer;
 		height: 100%;
-		width: 9.4rem;
-		padding: 0.4rem;
+		width: 9.6rem;
+		padding-right: 0.8rem;
 
 		h1 {
 			font-size: 2.1rem;
@@ -41,10 +41,6 @@
 			position: relative;
 			display: block;
 			filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.7));
-
-			.btn-img {
-				display: none;
-			}
 		}
 	}
 
@@ -52,5 +48,36 @@
 	&:active {
 		box-shadow: $item-shadow-hover;
 		transform: translateY(0px);
+	}
+}
+
+@media only screen and (min-width: $breakpoint-desktop-large) {
+	.main-btn-wrapper {
+		right: 6rem;
+		bottom: 18rem;
+		transform: unset;
+		border-radius: 50%;
+		height: 18rem;
+		width: 18rem;
+
+		.slide-in-btn {
+			display: none;
+		}
+
+		.add-pin-btn {
+			height: 100%;
+			width: 100%;
+			padding: 0.2rem;
+
+			h1 {
+				font-size: 3.2rem;
+				margin-bottom: 2rem;
+			}
+		}
+
+		&:hover,
+		&:active {
+			transform: translateY(-4px);
+		}
 	}
 }

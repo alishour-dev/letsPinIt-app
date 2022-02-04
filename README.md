@@ -2,11 +2,10 @@
 
 <br />
 
-🗒️ Pin your notes quickly & easily using this pretty cool notes Pinners app!
-🔗 Check it out [here](https://lets-pin-it.vercel.app/).. You won't regret!
-🚧 P.S. The app is still under construction, although it's ready for mobile users.
+🗒️ Pin your notes quickly & easily using this pretty cool notes Pinners app!<br />
+🔗 Check it out by visiting the app's link [here](https://lets-pin-it.vercel.app/). You won't regret!<br />
+🚧 P.S. The app is still under construction, although it's ready for mobile users.<br />
 
-<br />
 <br />
 
 ## App Info ℹ️

@@ -1,0 +1,72 @@
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.6rem 1.2rem;
+
+	.svg-logo {
+		width: auto;
+		height: 7.2rem;
+		filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.4));
+	}
+
+	.switcher-btn {
+		position: relative;
+		width: 70px;
+		height: 40px;
+
+		input {
+			display: none;
+		}
+
+		.slider {
+			border-radius: 34px;
+			border: 1px solid #ac9307;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			cursor: pointer;
+			background-image: url("../../images/theme-day.png");
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			box-shadow: $item-shadow;
+
+			-webkit-transition: 0.4s;
+			transition: 0.4s;
+
+			&::before {
+				border-radius: 50%;
+				position: absolute;
+				content: "";
+				height: 32px;
+				width: 32px;
+				left: 6px;
+				bottom: 3px;
+				background-color: #e9d669;
+				-webkit-transition: 0.4s;
+				transition: 0.4s;
+				border: 1px solid #ac9307;
+				box-shadow: $item-shadow;
+			}
+		}
+
+		input:checked + .slider {
+			background-image: url("../../images/theme-night.png");
+			border-color: #776607;
+
+			&::before {
+				background-color: #caae0d;
+				border-color: #9d870d;
+			}
+		}
+		input:checked + .slider:before {
+			-webkit-transform: translateX(26px);
+			-ms-transform: translateX(26px);
+			transform: translateX(26px);
+		}
+	}
+}

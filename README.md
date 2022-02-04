@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) project fully designed and developed by my! 🥰
 
-## Getting Started
+<br />
+<br />
 
-First, run the development server:
+## App Info ℹ️
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+A simple but cool web app, helps users add quick note pins and modify older ones by editing/deleting them, where each pinned note includes a title, content, and a cool bg picker to choose your favorite color for your pin. Fully designed and developed by me! Built using Next.js while using both next.js native hooks and the awesome react hooks, in addition to Styling using the powerful SASS preprocessor, and used LocaolStorage to persist data (notes).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
+<br />
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## App Idea 💡
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+I've created this app on my free time as a side project. The idea camewhen I already designed and worked on a similar project previously (last year), where that project was a task tracking app, which persists users tasks and store the data using a fake JSON server, with the temprorary backend hosted at Heroku, and the website itself hosted (and still live) using Firebase. Check it out here [Pintask app](https://pintask-46374.web.app/).
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<br />
+<br />
 
-## Learn More
+## Learn More 👨‍💻
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out my [Portfolio website](https://iamshour.com) & [Github Profile](https://github.com/iamshour) for more cool projects.

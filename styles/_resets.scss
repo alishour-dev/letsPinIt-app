@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@600&family=Quicksand:wght@500&display=swap");
+
+html,
+body,
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-indent: 0;
+}
+
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	font-size: 62.5%;
+}
+
+a,
+Link {
+	text-decoration: none;
+	color: inherit;
+	font: inherit;
+}
+
+body {
+	background: var(--app-bg);
+	width: 100vw;
+	user-select: none;
+	overflow-x: hidden;
+	font-family: "Overpass", sans-serif;
+
+	&::-webkit-scrollbar {
+		width: 0;
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		// background: var(--bg);
+		border-radius: 16px;
+	}
+}
+
+div,
+input,
+textarea,
+button,
+select,
+a {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	font-family: inherit;
+}
+
+p {
+	font-family: $font-text;
+	font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-titles;
+	font-weight: 600;
+}
+
+button {
+	font: unset;
+	font-family: inherit;
+	border: 0;
+	background: unset;
+	&:focus {
+		outline: 0;
+	}
+}
+
+// rgba(0, 69, 158, 1)
+
+@mixin centering {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin circle-btn {
+	cursor: pointer;
+	box-shadow: $item-shadow;
+	transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
+	border-radius: 50%;
+
+	&:hover,
+	&:active {
+		box-shadow: $item-shadow-hover;
+		transform: translateY(-2px);
+	}
+}

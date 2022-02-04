@@ -1,0 +1,198 @@
+.modal-backdrop {
+	position: fixed;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.85);
+	@include centering;
+	opacity: 0;
+	animation: smoothIn 200ms ease-in-out forwards;
+	cursor: pointer;
+
+	@keyframes smoothIn {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	form {
+		position: relative;
+		background: var(--modal-bg);
+		border-radius: 4px;
+		position: relative;
+		z-index: 11;
+		width: 90%;
+		height: 80%;
+		max-width: 85rem;
+		max-height: 85rem;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+		padding: 6rem 0 4rem 0;
+		cursor: default;
+
+		.close-btn {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			width: 4rem;
+			height: 4rem;
+			transition: transform 250ms ease-in-out;
+			cursor: pointer;
+
+			.icon {
+				font-size: 4rem;
+				color: var(--border-bg);
+			}
+
+			&:hover,
+			&:active {
+				transform: scale(0.95);
+
+				.icon {
+					color: var(--hover-red);
+				}
+			}
+		}
+
+		.inputs {
+			width: 80%;
+
+			input[type="text"] {
+				width: 100%;
+				margin-bottom: 2rem;
+			}
+
+			input[type="text"],
+			.textarea-container > textarea {
+				background: var(--input-bg);
+				border: 2px solid var(--border-bg);
+				border-radius: 4px;
+				padding: 1.2rem;
+				font-size: 1.6rem;
+				line-height: 2.2rem;
+				color: var(--input-text);
+
+				&::placeholder {
+					color: var(--border-bg);
+					opacity: 0.7;
+				}
+
+				&:focus {
+					outline: 0;
+					border-color: var(--hover-red);
+				}
+			}
+
+			.textarea-container {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 0.4rem;
+
+				.txt-top {
+					display: flex;
+					align-items: center;
+
+					p {
+						margin-left: 0.4rem;
+						font-size: 1.2rem;
+						font-family: $font-titles;
+						color: var(--border-bg);
+					}
+					p.max {
+						color: var(--hover-red);
+					}
+				}
+
+				textarea {
+					width: 100%;
+					resize: none;
+				}
+			}
+		}
+
+		.color-row {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 0.8rem;
+
+			h1 {
+				font-size: 1.6rem;
+				width: 16rem;
+				color: var(--border-bg);
+			}
+
+			.picker-wrapper {
+				overflow: hidden;
+				border: 2px solid var(--border-bg);
+				width: 8rem;
+				height: 8rem;
+				@include centering;
+				@include circle-btn;
+
+				input[type="color"] {
+					padding: 0;
+					width: 150%;
+					height: 150%;
+					margin: -25%;
+					appearance: none;
+					color: transparent;
+					background: transparent;
+					border: 0;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.main-btn {
+			width: 80%;
+			@include centering;
+			gap: 1rem;
+			height: 6rem;
+			border-radius: 4px;
+			background: transparent;
+			border: 2px solid var(--border-bg);
+			color: var(--border-bg);
+			cursor: pointer;
+			transition: border-color 250ms ease-in-out, color 250ms ease-in-out;
+
+			.icon {
+				font-size: 3rem;
+				color: inherit;
+			}
+			h1 {
+				color: inherit;
+				font-size: 2.6rem;
+			}
+
+			&:hover,
+			&:active {
+				border-color: var(--hover-red);
+				color: var(--hover-red);
+			}
+		}
+	}
+}
+
+.modal-backdrop.dissolve {
+	animation: dissolve 0.2s ease-in-out forwards;
+	opacity: 1;
+
+	@keyframes dissolve {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}

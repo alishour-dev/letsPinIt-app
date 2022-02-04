@@ -79,25 +79,10 @@ button {
 	}
 }
 
-// rgba(0, 69, 158, 1)
-
 @mixin centering {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-@mixin circle-btn {
-	cursor: pointer;
-	box-shadow: $item-shadow;
-	transition: box-shadow 250ms ease-in-out, transform 250ms ease-in-out;
-	border-radius: 50%;
-
-	&:hover,
-	&:active {
-		box-shadow: $item-shadow-hover;
-		transform: translateY(-2px);
-	}
 }
 
 @media only screen and (min-width: 1080px) {

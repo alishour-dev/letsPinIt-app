@@ -43,21 +43,18 @@
 			right: 10px;
 			width: 4rem;
 			height: 4rem;
-			transition: transform 250ms ease-in-out;
+			transition: color 250ms ease-in-out;
 			cursor: pointer;
+			color: var(--border-bg);
 
 			.icon {
 				font-size: 4rem;
-				color: var(--border-bg);
+				color: inherit;
 			}
 
 			&:hover,
 			&:active {
-				transform: scale(0.95);
-
-				.icon {
-					color: var(--hover-red);
-				}
+				color: var(--hover-red);
 			}
 		}
 
@@ -143,7 +140,15 @@
 				width: 8rem;
 				height: 8rem;
 				@include centering;
-				@include circle-btn;
+				cursor: pointer;
+				box-shadow: $item-shadow;
+				transition: box-shadow 250ms ease-in-out;
+				border-radius: 50%;
+
+				&:hover,
+				&:active {
+					box-shadow: $item-shadow-hover;
+				}
 
 				input[type="color"] {
 					padding: 0;

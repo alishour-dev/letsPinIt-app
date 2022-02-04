@@ -1,11 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project fully designed and developed by my! 🥰
+This is a [Next.js](https://nextjs.org/) project fully designed and developed by me! 🥰
 
 <br />
 <br />
 
 ## App Info ℹ️
 
-A simple but cool web app, helps users add quick note pins and modify older ones by editing/deleting them, where each pinned note includes a title, content, and a cool bg picker to choose your favorite color for your pin. Fully designed and developed by me! Built using Next.js while using both next.js native hooks and the awesome react hooks, in addition to Styling using the powerful SASS preprocessor, and used LocaolStorage to persist data (notes).
+A simple but cool web app, helps users add quick note pins and modify older ones by editing/deleting them, where each pinned note includes a title, content, and a cool bg picker to choose your favorite color for your pin. Fully designed and developed by me! Built using Next.js while using both next.js native hooks and the awesome react hooks, in addition to Styling using the powerful SASS preprocessor, and used LocalStorage to persist data (users' notes).
 
 <br />
 <br />

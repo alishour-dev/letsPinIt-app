@@ -29,7 +29,7 @@ header {
 			right: 0;
 			bottom: 0;
 			cursor: pointer;
-			background-image: url("../../images/theme-day.png");
+			background-image: url("../../public/theme-day.png");
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: cover;
@@ -55,7 +55,7 @@ header {
 		}
 
 		input:checked + .slider {
-			background-image: url("../../images/theme-night.png");
+			background-image: url("../../public/theme-night.png");
 			border-color: #776607;
 
 			&::before {

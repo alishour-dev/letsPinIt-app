@@ -1,7 +1,7 @@
 import Logo from "@components/assets/Logo"
 import { useState, useEffect, useRef } from "react"
 
-export default function index() {
+export default function Header() {
 	const [theme, setTheme] = useState("light")
 	const checked = useRef(null)
 

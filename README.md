@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project fully designed and developed by me! 🥰
+# LetsPinIt App 📌
+
+<br />
+
+🗒️ Pin your notes quickly & easily using this pretty cool notes Pinners app!
+🔗 Check it out [here](https://lets-pin-it.vercel.app/).. You won't regret!
+🚧 P.S. The app is still under construction, although it's ready for mobile users.
 
 <br />
 <br />

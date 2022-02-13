@@ -17,7 +17,8 @@ A simple but cool web app, helps users add quick note pins and modify older ones
 
 ## App Idea 💡
 
-I've created this app on my free time as a side project. The idea camewhen I already designed and worked on a similar project previously (last year), where that project was a task tracking app, which persists users tasks and store the data using a fake JSON server, with the temprorary backend hosted at Heroku, and the website itself hosted (and still live) using Firebase. Check it out here [Pintask app](https://pintask-46374.web.app/).
+I've created this app on my free time as a side project. The idea came when I wanted to refresh my memory with using Array methods. So after a little time, I turned my litle chunck of code and self-memory-testing into this cool UI styled app. I tend to work on many side projects on my free time to keep a refreshed memory, while it's also a lot of fun! If you like what I do, hit me up & lets chat!
+P.S. I've already built a similar app to this last year, but with a little less engaging UI, called "PINTASK". It was a task tracking app, which persists users tasks and store the data using a fake JSON server, with a temprorary backend hosted at Heroku, while the site itself was hosted (and still live) using Firebase. Check it out here [Pintask app](https://pintask-46374.web.app/).
 
 <br />
 <br />

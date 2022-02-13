@@ -2,7 +2,7 @@
 
 <br />
 
-🗒️ Pin your notes quickly & easily using this pretty cool notes Pinners app!<br />
+🗒️ Pin your notes quickly & easily using this pretty cool notes Pinning app!<br />
 🔗 Check it out by visiting the app's link [here](https://lets-pin-it.vercel.app/). You won't regret!<br />
 📱 App is Fully responsive, supporting all screen sizes!<br />
 
